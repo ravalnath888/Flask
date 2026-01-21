@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <!-- ✅ GLOBAL CSS LINK -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome 👋</h1>
+        <p>
+            We’re glad to have you here.<br>
+            Start your journey with us today.
+        </p>
+
+        <div class="btn-group">
+            <a href="/login" class="btn">Login</a>
+            <a href="/signup" class="btn">Sign Up</a>
+        </div>
+
+        <footer>
+            © 2025 YourApp. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

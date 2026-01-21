@@ -1,0 +1,79 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* ===== CONTAINERS ===== */
+.container,
+.login-container,
+.signup-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+button,
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #667eea;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #5a67d8;
+}
+
+/* ===== LINKS ===== */
+.link {
+    margin-top: 15px;
+}
+
+.link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}

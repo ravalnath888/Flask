@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #667eea;
+            color: #fff;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+        }
+
+        .error {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>📊 User DataSubmited Successfully</h2>
+
+<div class="btn-group">
+            <a href="/View" class="btn">View Data</a>
+        </div>
+<table id="dataTable">
+    <thead>
+        <tr id="tableHead"></tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<p class="error" id="error">{{result}}</p>
+
+</body>
+</html>
