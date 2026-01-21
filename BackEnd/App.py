@@ -5,6 +5,8 @@ from pymongo.server_api import ServerApi
 import os
 from dotenv import load_dotenv
 # Encode username and password
+# Encode username and password
+# Encode username and password
 username = quote_plus("rahul")  # encode special chars if any
 password = quote_plus("qZKESVJVzfbD9XFp")
 
@@ -50,6 +52,15 @@ def Save():
 def Get():
     
     return jsonify(list(coll.find({}, {'_id': 0})))
+
+
+@app.route('/api/submittodoitem', methods=['POST'])
+def Save1():
+    print('Incoming Success')
+    userData = dict(request.json)
+
+    coll.insert_one(userData)
+    return "Data submitted successfully"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
