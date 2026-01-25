@@ -54,13 +54,13 @@ def Get():
     return jsonify(list(coll.find({}, {'_id': 0})))
 
 
-@app.route('/api/submittodoitem', methods=['POST'])
+@app.route('/api/submittodoitem')
 def Save1():
     print('Incoming Success')
-    userData = dict(request.json)
+    #userData = dict(request.json)
 
-    coll.insert_one(userData)
+    #coll.insert_one(userData)
     return "Data submitted successfully"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
